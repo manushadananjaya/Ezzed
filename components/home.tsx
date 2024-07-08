@@ -32,14 +32,22 @@ import { Input } from "@/components/ui/input"
 export function HomeComponent() {
   return (
     <div className="flex flex-col min-h-dvh">
-      <header className="sticky top-0 z-50 w-full bg-background border-b">
+      <header className="sticky top-0 z-50 md:px-24 w-full bg-background border-b">
         <div className="container flex items-center justify-between h-16 px-4 md:px-6">
-          <Link href="#" className="flex items-center gap-2 text-lg font-semibold" prefetch={false}>
+          <Link
+            href="#"
+            className="flex items-center gap-2 text-lg font-semibold"
+            prefetch={false}
+          >
             <Package2Icon className="w-6 h-6" />
             <span className="sr-only">Acme Inc</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="#" className="font-medium hover:text-primary transition-colors" prefetch={false}>
+            <Link
+              href="#"
+              className="font-medium hover:text-primary transition-colors"
+              prefetch={false}
+            >
               Shop
             </Link>
             <DropdownMenu>
@@ -80,10 +88,18 @@ export function HomeComponent() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link href="#" className="font-medium hover:text-primary transition-colors" prefetch={false}>
+            <Link
+              href="#"
+              className="font-medium hover:text-primary transition-colors"
+              prefetch={false}
+            >
               About
             </Link>
-            <Link href="#" className="font-medium hover:text-primary transition-colors" prefetch={false}>
+            <Link
+              href="#"
+              className="font-medium hover:text-primary transition-colors"
+              prefetch={false}
+            >
               Contact
             </Link>
           </nav>
@@ -97,25 +113,32 @@ export function HomeComponent() {
               <span className="sr-only">Cart</span>
             </Button>
             <Button variant="ghost" size="icon" className="rounded-full">
-              <img src="/placeholder.svg" width="32" height="32" className="rounded-full" alt="Avatar" />
+              <img
+                src="/placeholder.svg"
+                width="32"
+                height="32"
+                className="rounded-full"
+                alt="Avatar"
+              />
               <span className="sr-only">Account</span>
             </Button>
           </div>
         </div>
       </header>
-      <section className="relative items-center space-x-4 w-full h-[80vh] overflow-hidden">
+      <section className="relative md:px-24   items-center space-x-4 w-full h-[80vh] overflow-hidden">
         <img
           src="/placeholder.svg"
           alt="Hero Image"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50 z-10" />
-        <div className="relative z-20 container h-full flex flex-col items-center justify-center text-center text-white space-y-6 px-4 md:px-6">
+        <div className="relative  z-20 container h-full flex flex-col items-center justify-center text-center text-white space-y-6 pl-10 px-4 md:px-6">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Discover the Latest Fashion Trends
           </h1>
           <p className="max-w-3xl text-lg md:text-xl">
-            Explore our curated collection of stylish and high-quality clothing for every occasion.
+            Explore our curated collection of stylish and high-quality clothing
+            for every occasion.
           </p>
           <div className="space-x-4">
             <Link
@@ -135,28 +158,35 @@ export function HomeComponent() {
           </div>
         </div>
       </section>
-      <section className="py-12 md:py-24 lg:py-32 bg-muted">
-        <div className="container space-y-8">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      <section className="py-12 md:py-24 md:px-24 lg:py-32 bg-muted">
+        <div className="container  space-y-8">
+          <div className="flex flex-col  items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Our Clothing Brand</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                About Our Clothing Brand
+              </h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                At Acme Inc, we are passionate about creating high-quality, stylish clothing that empowers our customers
-                to express their unique sense of fashion. Our team of designers and artisans work tirelessly to curate a
-                collection that combines the latest trends with timeless elegance. We believe that fashion should be
-                accessible to everyone, which is why we strive to offer affordable prices without compromising on
-                quality or craftsmanship. Our mission is to inspire confidence and self-expression through the power of
-                fashion.
+                At Acme Inc, we are passionate about creating high-quality,
+                stylish clothing that empowers our customers to express their
+                unique sense of fashion. Our team of designers and artisans work
+                tirelessly to curate a collection that combines the latest
+                trends with timeless elegance. We believe that fashion should be
+                accessible to everyone, which is why we strive to offer
+                affordable prices without compromising on quality or
+                craftsmanship. Our mission is to inspire confidence and
+                self-expression through the power of fashion.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="py-12 md:py-24 lg:py-32">
+      <section className="py-12 md:px-24 md:py-24 lg:py-32">
         <div className="container space-y-8">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Products</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Featured Products
+              </h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
                 Discover our curated selection of the latest fashion items.
               </p>
@@ -164,7 +194,11 @@ export function HomeComponent() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <Card>
-              <img src="/placeholder.svg" alt="Product 1" className="aspect-[4/3] w-full object-cover rounded-t-md" />
+              <img
+                src="/placeholder.svg"
+                alt="Product 1"
+                className="aspect-[4/3] w-full object-cover rounded-t-md"
+              />
               <CardContent className="p-4 space-y-2">
                 <h3 className="text-lg font-medium">Casual Shirt</h3>
                 <p className="text-muted-foreground">$29.99</p>
@@ -174,7 +208,11 @@ export function HomeComponent() {
               </CardContent>
             </Card>
             <Card>
-              <img src="/placeholder.svg" alt="Product 2" className="aspect-[4/3] w-full object-cover rounded-t-md" />
+              <img
+                src="/placeholder.svg"
+                alt="Product 2"
+                className="aspect-[4/3] w-full object-cover rounded-t-md"
+              />
               <CardContent className="p-4 space-y-2">
                 <h3 className="text-lg font-medium">Skinny Jeans</h3>
                 <p className="text-muted-foreground">$49.99</p>
@@ -184,7 +222,11 @@ export function HomeComponent() {
               </CardContent>
             </Card>
             <Card>
-              <img src="/placeholder.svg" alt="Product 3" className="aspect-[4/3] w-full object-cover rounded-t-md" />
+              <img
+                src="/placeholder.svg"
+                alt="Product 3"
+                className="aspect-[4/3] w-full object-cover rounded-t-md"
+              />
               <CardContent className="p-4 space-y-2">
                 <h3 className="text-lg font-medium">Floral Dress</h3>
                 <p className="text-muted-foreground">$69.99</p>
@@ -194,7 +236,11 @@ export function HomeComponent() {
               </CardContent>
             </Card>
             <Card>
-              <img src="/placeholder.svg" alt="Product 4" className="aspect-[4/3] w-full object-cover rounded-t-md" />
+              <img
+                src="/placeholder.svg"
+                alt="Product 4"
+                className="aspect-[4/3] w-full object-cover rounded-t-md"
+              />
               <CardContent className="p-4 space-y-2">
                 <h3 className="text-lg font-medium">Leather Jacket</h3>
                 <p className="text-muted-foreground">$99.99</p>
@@ -206,11 +252,13 @@ export function HomeComponent() {
           </div>
         </div>
       </section>
-      <section className="py-12 md:py-24 lg:py-32 bg-muted">
+      <section className="py-12 md:px-24 md:py-24 lg:py-32 bg-muted">
         <div className="container space-y-8">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Shop by Category</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Shop by Category
+              </h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
                 Explore our wide range of clothing categories.
               </p>
@@ -268,7 +316,7 @@ export function HomeComponent() {
           </div>
         </div>
       </section>
-      <footer className="bg-muted p-6 md:py-12 w-full">
+      <footer className="bg-muted md:px-24 p-6 md:py-12 w-full">
         <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
           <div className="grid gap-1">
             <h3 className="font-semibold">Company</h3>
@@ -324,25 +372,41 @@ export function HomeComponent() {
           <div className="grid gap-1">
             <h3 className="font-semibold">Stay Connected</h3>
             <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-foreground"
+                prefetch={false}
+              >
                 <TwitterIcon className="w-5 h-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-foreground"
+                prefetch={false}
+              >
                 <InstagramIcon className="w-5 h-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground" prefetch={false}>
+              <Link
+                href="#"
+                className="text-muted-foreground hover:text-foreground"
+                prefetch={false}
+              >
                 <FacebookIcon className="w-5 h-5" />
               </Link>
             </div>
             <form className="flex gap-2">
-              <Input type="email" placeholder="Enter your email" className="max-w-lg flex-1" />
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="max-w-lg flex-1"
+              />
               <Button type="submit">Subscribe</Button>
             </form>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 function AccessibilityIcon(props: any) {
