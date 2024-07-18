@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { SearchIcon, ShoppingCartIcon, ChevronDownIcon, Package2Icon } from "@/components/ui/icons";
+import Image from 'next/image';
 
 
 function HeaderComponent() {
@@ -20,7 +21,7 @@ function HeaderComponent() {
             className="flex items-center gap-2 text-lg font-semibold"
             prefetch={false}
           >
-            <Package2Icon className="w-6 h-6" />
+            <Image src="/ezzed.png" width={52} height={52} alt="Acme Inc" />
             <span className="sr-only">Acme Inc</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
