@@ -158,7 +158,7 @@ export function HomeComponent() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
             <Link
-              href="#"
+              href="/shop/shirts"
               className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-md bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
               prefetch={false}
             >
@@ -166,7 +166,7 @@ export function HomeComponent() {
               <span className="text-sm font-medium">Shirts</span>
             </Link>
             <Link
-              href="#"
+              href="/shop/pants"
               className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-md bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
               prefetch={false}
             >
@@ -174,7 +174,7 @@ export function HomeComponent() {
               <span className="text-sm font-medium">Pants</span>
             </Link>
             <Link
-              href="#"
+              href="/shop/dresses"
               className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-md bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
               prefetch={false}
             >
@@ -182,7 +182,7 @@ export function HomeComponent() {
               <span className="text-sm font-medium">Dresses</span>
             </Link>
             <Link
-              href="#"
+              href="/shop/jackets"
               className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-md bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
               prefetch={false}
             >
@@ -190,7 +190,7 @@ export function HomeComponent() {
               <span className="text-sm font-medium">Jackets</span>
             </Link>
             <Link
-              href="#"
+              href="/shop/accessories"
               className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-md bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
               prefetch={false}
             >
@@ -198,7 +198,7 @@ export function HomeComponent() {
               <span className="text-sm font-medium">Accessories</span>
             </Link>
             <Link
-              href="#"
+              href="/shop/shoes"
               className="group flex flex-col items-center justify-center space-y-2 p-4 rounded-md bg-background hover:bg-accent hover:text-accent-foreground transition-colors"
               prefetch={false}
             >
